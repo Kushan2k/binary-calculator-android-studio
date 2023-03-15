@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingHorizontal="20dp"
+    tools:context=".HomeActivity">
+
+    <EditText
+        android:id="@+id/questiontxt"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:ems="10"
+        android:hint="110+111+001"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="textEnd" />
+
+    <EditText
+        android:paddingRight="10dp"
+        android:id="@+id/anstxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:ems="10"
+        android:hint="1110"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="textEnd" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/num1btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:height="100dp"
+            android:onClick="numberTapped"
+            android:text="1"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/num0btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:height="100dp"
+            android:onClick="numberTapped"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:height="100dp"
+            android:onClick="addButtonTapped"
+            android:text="+"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/decbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:height="100dp"
+
+            android:onClick="convertButtonTapped"
+            android:text="DECIMAl" />
+
+        <Button
+
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:height="100dp"
+
+            android:onClick="clearButtonTapped"
+            android:text="CLEAR"
+            tools:ignore="OnClick" />
+
+        <Button
+
+
+            android:id="@+id/equlbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:height="100dp"
+            android:text="="
+            android:onClick="convertButtonTapped" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/decans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="40dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+</LinearLayout>
